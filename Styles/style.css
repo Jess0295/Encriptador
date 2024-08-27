@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #674188;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #1f1049;
+    --color-cuaternario: #f6edfd;
+    --color-boton-hover: #8f6cad;
+    --color-boton-hover2: #3c305f;
+    --color-fondo-textos: #ffffff;
+
+    --fuente-Montserrat: 'Montserrat', sans-serif;
+    --fuente-Krona: 'Krona One', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 1%;
+    box-sizing: border-box;
+    background-color:var(--color-cuaternario);
+}
+
+.header{
+    padding-top: 15px;
+}
+
+.logo-alura{
+    width: 10%;
+    top: 10%;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 84vh;
+    background-color: var(--color-cuaternario);
+}
+
+.texto{
+    padding: 10px 15px 0px 15px;
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 12%;
+    top: 10%;
+    border: none;
+    border-radius: 25px;
+    font-family: var(--fuente-Montserrat);
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 150%;
+    background: var(--color-fondo-textos);
+    box-shadow: 4px 4px 5px -3px var(--color-terciario)
+}
+
+.texto::placeholder{
+    color: var(--color-primario);
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 72%;
+}
+
+.terminos p{
+    padding-left: 10px;
+    font-family: var(--fuente-Krona);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    color: var(--color-primario);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0%;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 75%;
+    gap: 13px;
+    padding-top: 30px;
+}
+
+.boton-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 24.5%;
+    background: var(--color-terciario);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fuente-Montserrat);
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.boton-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    width: 24.5%;
+    background: var(--color-primario);
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fuente-Montserrat);
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.boton-desencriptar:hover{
+    font-family: var(--fuente-Montserrat);
+    background-color: var(--color-boton-hover);
+}
+
+.boton-encriptar:hover{
+    font-family: var(--fuente-Montserrat);
+    background-color: var(--color-boton-hover2);
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 61%;
+    left: 60%;
+    top: 10%;
+    background: var(--color-fondo-textos);
+    border-radius: 25px;
+    box-shadow: 4px 4px 5px -3px var(--color-terciario)
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+}
+
+.imagen-muneco{
+    
+    position: absolute;
+    width: 60%;
+    top: 5%;
+}
+
+.mensaje-encriptado h2{
+    width: 80%;
+    font-family: var(--fuente-Krona);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-terciario);
+    margin-top: 10%;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: var(--fuente-Montserrat);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-primario);
+    margin-top: 3%;
+}
+
+.footer{
+    background-color:var(--color-terciario);
+    text-align: center;
+    font-family: var(--fuente-Krona);
+    color: var(--color-cuaternario);
+    padding: 24px;
+    font-weight: 400;
+    top: 100%;
+}
+
+.javascriptlink{
+    background-color:var(--color-terciario);
+}
+
+@media (max-width: 57.5em) {
+
+    .logo-alura{
+        width: 20%;
+        top: 10%;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .encriptar{
+        width: 100%;
+        left: 6%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 50%;
+        left: 6%;
+        top: 5%;
+    }
+
+    .terminos{
+        width: 50%;
+        left: 6%;
+        top: 56%;
+    }
+
+    .terminos p{
+        font-size: 16px;
+        top: 80%;
+    }
+
+    .botones{
+        width: 80%;
+        left: 8%;
+        top: 59%;
+        justify-content:space-between;
+    }
+
+    .boton-encriptar, .boton-desencriptar{
+        width: 52%;
+        border-radius: 16px;
+    }
+
+    .encriptado{
+        width: 85%;
+        height: 20%;
+        left: 6%;
+        top: 69%;
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+        top: -10%;
+    }
+
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .footer{
+        text-align: center;
+        width: 90%;
+        height: 10%;
+        top: 100%;
+    }
+}

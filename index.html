@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <img class="logo-alura" src="/Assets/Frame 6.png">
+    </header>
+    <main>
+        <div class="container">
+            <div class="encriptar">
+                <textarea
+                    class="texto"
+                    name="texto"
+                    id="texto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingresa el texto aquí"
+                ></textarea>
+
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <input 
+                 type="button" 
+                    class="boton-desencriptar" 
+                value="Desencriptar" 
+                onclick="desencriptar()"
+                />
+            </div>
+            </div>
+            <div class="encriptado" id="resultado">
+                <img class="imagen-muneco" src="./Assets/Muñeco.png" alt="" id="muñeco">
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                    <p id="parrafo">
+                        Ingresa el texto que deseas encriptar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jessica valdebenito Vargas • G7 ONE • 2024</p>
+    </footer>
+</body>
+<script class="javascriptlink" src="app.js"></script>
+</html>
