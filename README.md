@@ -1,6 +1,6 @@
 #¡Hola, bienvenido a mi proyecto de Encriptador de texto!
 
-![imagen]()
+![imagen](Resultado-challenge.jpg)
 
 ## Herramientas utilizadas:
 
